@@ -1,0 +1,14 @@
+[project]
+name = "openalex-citation-descriptive"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "black>=26.5.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "psycopg2>=2.9.12",
+    "pyalex>=0.21",
+    "pyyaml>=6.0.3",
+]

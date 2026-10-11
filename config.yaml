@@ -1,0 +1,15 @@
+# api_to_db.py
+
+api:
+  key: # Insert OpenAlex API key here (https://developers.openalex.org/guides/authentication)
+  authors: 25 # Number of authors requested from the OpenAlex API
+  
+database: # Change the credentials below to match your local database
+  host: host
+  dbname: dbname 
+  user: user
+  password: password
+  port: port
+  
+metadata:
+  data_ver: 1 # Internal identifyer
