@@ -6,7 +6,7 @@ api:
   
 database: # Change the credentials below to match your local database
   host: host
-  dbname: dbname 
+  dbname: dbname
   user: user
   password: password
   port: port
