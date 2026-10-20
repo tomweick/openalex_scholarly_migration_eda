@@ -5,6 +5,9 @@
 -- Add aggregated country column
 
 ALTER TABLE authors_powerbi
+DROP COLUMN IF EXISTS academic_origin_agg;
+
+ALTER TABLE authors_powerbi
 ADD COLUMN academic_origin_agg VARCHAR(255);
 
 -- Count authors by academic origin
@@ -32,7 +35,7 @@ country_shares AS (
 UPDATE authors_powerbi
 SET academic_origin_agg =
     CASE
-        WHEN country_shares.share < 0.05 THEN 'other'
+        WHEN country_shares.share < 0.02 THEN 'other'
         ELSE authors_powerbi.academic_origin
     END
 FROM country_shares
